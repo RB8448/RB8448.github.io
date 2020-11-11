@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Chewy&family=Kaushan+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chewy&family=Gloria+Hallelujah&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 
 * {
@@ -6,203 +7,229 @@
   padding: 0;
   margin: 0;
 }
+
 html {font-size: 20px;}
+p {font-family: 'Roboto', serif; line-height: 1.2rem;}
 
 header {
-  height: 100vh;
-  padding: 3rem 0 0 0;
+  width: 100%;
+  min-height: 100vh;
+  padding-top: 4rem;
   text-align: center;
-  background-position: center;
-  background-repeat: no-repeat;
+  position: relative;
+  background: url("https://getbase.org/templates/restaurant-template/hero-bg.3078b0d9.jpg");
   background-size: cover;
+  background-repeat: no-repeat;
   background-attachment: fixed;
   color: white;
-  background-image: url('https://www.falafelinc.org/assets/hero_image.4f6442f.jpg');
+}
+
+header h1 {
+  font-family: 'Chewy', cursive;
+  font-size: 3rem;
+  word-spacing: 1rem;
+  letter-spacing: 0.2rem;
+}
+header > h2 {font-size: 2rem;}
+section {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 nav {
   position: fixed;
   top: 0;
-  width: 100vw;
   display: flex;
+  width: 100%;
   justify-content: space-between;
-  padding: 1rem 3rem;
-  height: 7vh;
-  align-items: center;
-  background-color: rgba(0, 0, 0, 0.3);
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.4);
   z-index: 999;
+  transition: ease 1s;
 }
-section {
-  font-family: 'Chewy', cursive;
-  font-size: 2rem;
-  letter-spacing: 0.2rem;
-  word-spacing: 0.5rem;
-  text-shadow: 0 0 5px black;
-  position: relative;
+ul {display: flex;}
+li {margin: 0 0.4rem;}
+.row {display: flex;
+  flex-wrap: wrap;
 }
-.wrapper {
-  position: absolute;
-  top: 50%;
-  left: 50%; 
-  transform: translate(-50%);
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 1rem 1rem;
+}
+.gallery {text-align: center; padding: 4rem 1rem 0 1rem; background: url('https://www.falafelinc.org/assets/hero_image.4f6442f.jpg'); background-attachment: fixed;}
+.column img {
   margin-top: 2rem;
+  vertical-align: middle;
   width: 100%;
 }
-section img {
-  margin: 2rem;
+.btn-wrapper {
+  display: flex;
+  justify-content: center;
 }
-li {
-  display: inline-block;
-  margin: 0 0.5rem;
-}
-.fab {
-  font-size: 1.3rem;
-  background: linear-gradient(rgb(0,255,0), rgb(255,0,0));
-  border-radius: 50%;
-  padding: 0.3rem;
-  margin-right: 0.5rem;
-  
-}
+section div {margin: 0.5rem;}
 
-.btn {
-  width: 10rem;
-  margin: 0 2rem;
-  border: 1px solid white;
-  padding: 0.5rem;
-  display: inline-block;
-  font-family: serif;
-  font-size: 0.5rem;
-}
+.btn-wrapper div {padding: 0.5rem; margin: 0 1rem; width: 10rem;}
 
-main {
-  text-align: center;
+
+/**/
+/**/
+/**/
+
+.about {
+  min-height: 100vh;
+  overflow: hidden;
+  padding: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background: url("https://getbase.org/templates/restaurant-template/contemporary-china.c167a0e1.png");
+  font-family: 'Roboto', sans-serif;
+}
+.about p {font-size: 0.8rem;}
+.about-image {width: 100rem; margin: 0 0 0 5rem;}
+.about-image img{width: 100%}
+.aaa {text-align: center;}
+.about h2 {
+  margin-bottom: 1rem; 
+  font-family: 'Gloria Hallelujah', cursive;
   color: goldenrod;
 }
+.seperator-wrapper {margin-bottom: 1rem;}
+.mantra {margin: 2rem;}
+
+
+.review {
+  min-height: 100vh;
+  padding: 4rem;
+  background: url('https://www.falafelinc.org/assets/hero_image.4f6442f.jpg');
+  text-align: center;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  color: white;
+  position: relative;
+}
+.wrap {position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);}
+.review-video {
+width: fit-content;
+margin: 1rem auto;
+}
+iframe {
+  max-height: 25rem;
+  min-width: 30rem;
+  min-height: 15rem;
+  max-width: 50rem;
+  box-shadow: 0 0 50px black;
+}
+
+.menu h2,
+.menu p {font-family: 'Gloria Hallelujah', cursive; color: goldenrod;}
+.menu p {font-weight: bold; font-size: 1.2rem;}
+.menu {min-height: 100vh; padding: 4rem; position: relative; background: url('https://getbase.org/templates/restaurant-template/cream-pixels.d883f54b.png');}
+.menu-box {text-align: center;
+position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);}
 .menu-container {
   display: flex;
-  justify-content: space-around;
-  margin-top: 3rem;
 }
-.btn3 {
-  width: 10rem;
-  border: 1px solid black;
-  margin: auto;
-}
-.menu {
-  
-  background: url("https://getbase.org/templates/restaurant-template/contemporary-china.c167a0e1.png");
-  padding: 3.2rem;
-  height: 100vh;
-}
-
-.container {
-  position: relative;
-  max-width: 15rem; 
-  max-height: 15rem;
-  padding-top: 100%; /* 1:1 Aspect Ratio */
-  position: relative; /* If you want text inside of it */
-  transition: ease 1s;
-  flex: 1;
-  overflow: hidden;
-}
-
-.container img {
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  vertical-align: middle; 
-  filter: blur(2px);
-  -webkit-filter: blur(1px);
-  width: 100%;
-  height: inherit;
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-}
-
-img {  opacity: 1;
-  transition: ease 0.5s;
-}
-
-.content {
-  transition: 0.5s ease;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  text-align: center;
-  background-color: rgba(0, 0, 0, 0.5);
-  width: 100%;
-  height: 0;
-  overflow: hidden;
-  padding: 0.2rem auto;
-}
-.btn3 {
-  background-color: white;
-  padding: 0.2rem;
-  width: 100%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-
-.container:hover .content {
-  height: 20%;
-}
-.container:hover img {filter: grayscale(0); box-shadow: 0 0 15px black;}
-
-p.font {
-  font-size: 1.3rem;
-  font-weight: bold;
-}
-.seperator {margin: 1.3rem auto;}
-
-@media screen and (max-width: 400px) {
-  .menu-container {flex-direction: column;}
-  .menu {padding: 0;}
-  .container {margin: 0 auto;}
-  .food {margin-top: 2rem;}
-}
-.food {
-  margin: 0 1rem;
-}
-
-.font {font-family: 'Kaushan Script', cursive;
-}
-h2.font {font-size: 2rem;}
-.empty {display: flex;}
-.empty1 {background-color: black;
-  height: 20rem;
-  width: 10rem;
-  margin-right: 3rem;
-}
-.empty2 {background-color: red; height: 20rem; width: 10rem;}
-
-.order {
-  display: flex;
-  padding: 3rem;
+.food {margin: 3rem 1rem; display: flex; flex-direction: column;
   justify-content: space-around;
   align-items: center;
+}
+.container {
+  max-width: 10rem; 
+  position: relative;
+}
+.container img {width: 100%;}
+
+.seperator {margin: 1rem;}
+.content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+  
+}
+
+.container:hover .content{
+  height: 100%;
+  
+}
+.btn3 {
+  color: white;
+  font-size: 20px;
   position: absolute;
   top: 50%;
   left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  width: 100vw;
+  text-align: center;
 }
-.order-wrapper {
-  background: url("https://getbase.org/templates/restaurant-template/contemporary-china.c167a0e1.png");
-  background-attachment: local;
-  height: 100vh; 
-  position: relative;
-  width: 100vw;
-  margin-top: -1px;
+.menu a {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 1rem;
+}
+
+.order {
+  padding: 4rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 100vh;
+  text-align: center;
+  background: url('https://getbase.org/templates/restaurant-template/cream-pixels.d883f54b.png');
 }
 label {display: block;}
-form {text-align: left;}
-.input {margin-bottom: 1rem;
+
+footer {
   display: flex;
-  flex-direction: column; 
-  align-content: center;}
-  input, select {width: calc(100% - 100px); height: 1.5rem; align-self: center;}
-button {margin: auto; align-self: center;}
+  justify-content: space-around;
+  background-color: rgba(50, 50, 50, 0.5);
+  color: white;
+  padding: 2rem;
+}
+footer p {font-size: 0.8rem;}
+h5 {text-align: center; font-size: 1.2rem;}
+strong {margin-right: 0.2rem;}
+.decor {width: 3rem;}
+.decor1 {
+  transform: rotate(180deg);
+}
+.empty {
+  max-width: 20rem;
+  min-width: 10rem;
+}
+.empty img {width: 100%;}
+
+.btn {
+  background-color: rgba(0, 0, 0, 0.5); 
+  border: none;
+  border-radius: 0.5rem;
+  transition: ease 1s;
+}
+.btn:hover {background-color: rgba(0, 0, 0, 1); cursor: pointer;}
+h2 {align-items: center; align-content: center; vertical-align: middle;}
+
+.gallery img {
+  border-radius: 0.5rem;
+  box-shadow: 0 0 10px black;
+}
+a {text-decoration: none; color: white; transition: ease 1s;}
+nav:hover {background-color: white; color: black;}
+nav:hover a {color: black;}
+
+.gallery h2 {font-family: 'Gloria Hallelujah', cursive; color: white;}
+.gallery h2 img {box-shadow: none;}
+.order h2 {font-family: 'Gloria Hallelujah', cursive; color: goldenrod;}
